@@ -10,10 +10,10 @@ alert("lets play a guessing game. ");
 var favFood = prompt("do you know whats my favorite food?");
 favFood.toLowerCase();
 if(favFood === "pizza"){
-    document.write("correct!! its pizza 🍕");
+    alert("correct!! its pizza 🍕");
 }
 else{
-    document.write("sorry but no...my fav is pizza")
+    alert("sorry but no...my fav is pizza")
 }
 
 //console.log("correct answer is pizza");
@@ -25,33 +25,31 @@ alert("next question!");
 var sparetime = prompt("what do you think i do in my spare time?");
 sparetime.toLowerCase();
 if(sparetime === "games"){
-    document.write("<br>correct !!! i play video games in my spare time ");
+    alert("<br>correct !!! i play video games in my spare time ");
 }
 else{
-    document.write("<br>sorry but  right answer is games...")
+    alert("<br>sorry but  right answer is games...")
 }
-
 //console.log("correct answer is games");
 
 
 var favGame = prompt("can you guess my fav game??");
 favGame.toLowerCase();
 if(favGame === "days gone" || favGame === "dota"){
-    document.write("<br>correct !! that is my fav game ");
+    alert("<br>correct !! that is my fav game ");
 } else {
-    document.write("<br>sorry , i love days gone and dota the most");
+    alert("<br>sorry , i love days gone and dota the most");
 }
-
 //console.log("correct answer is dota or days gone");
 
 
 var favSong = prompt("do you know whats my favorite song ?");
 favSong.toLowerCase();
 if(favSong === "valhalla"){
-    document.write("<br>yes!!! it is valhalla for sure ");
+    alert("<br>yes!!! it is valhalla for sure ");
 }
 else{
-    document.write("<br>sorry but my fav is valhalla...")
+    alert("<br>sorry but my fav is valhalla...")
 }
 
 //console.log("correct answer is valhalla ");
@@ -60,10 +58,10 @@ else{
 var toVisit = prompt("can you guess what country i would love to visit the most?");
 toVisit.toLowerCase();
 if(toVisit === "iceland"){
-    document.write("<br>yes!! it is iceland, i love the nature views in it");
+    alert("<br>yes!! it is iceland, i love the nature views in it");
 }
 else{
-    document.write("<br>sorry but i would like to visit iceland..")
+    alert("<br>sorry but i would like to visit iceland..")
 }
 
 //console.log("correct answer is iceland");
@@ -86,6 +84,7 @@ for (i; i < 4; i++) {
         alert("sorry but its not the correct answer, a little hint : its of the of the first 3 odd numbers 😉")
     }
 }
+
 
 let favMovies = ['enemy at the gates', 'hunger games', 'world war Z','gorwn ups','hangover','lord of the rings','zombieland','warrior','hacker','gangs of newyork'];
 
