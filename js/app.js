@@ -120,8 +120,11 @@ toVisitF();
 
 //console.log("correct answer is iceland");
 
+//var guessNum = prompt("pick a number between 1 and 10");
+
+
 function guessNumF(){
-    var guessNum = prompt("pick a number between 1 and 10");
+ //   var guessNum = prompt("pick a number between 1 and 10");
 
 //console.log("correct answer is 3");
 
@@ -133,13 +136,15 @@ for (i; i < 4; i++) {
     var guessNum = prompt("pick a number between 1 and 10");
     if (guessNum == 3) {
         alert("correct!!! the number is three 3!!");
-        break
+        break;
     } else{
         alert("sorry but its not the correct answer, a little hint : its of the of the first 3 odd numbers 😉")
     }
 }
 }
+
 guessNumF();
+
 // var guessNum = prompt("pick a number between 1 and 10");
 
 // //console.log("correct answer is 3");
@@ -152,7 +157,7 @@ guessNumF();
      var guessNum = prompt("pick a number between 1 and 10");
      if (guessNum == 3) {
          alert("correct!!! the number is three 3!!");
-         break
+         break;
      } else{
          alert("sorry but its not the correct answer, a little hint : its of the of the first 3 odd numbers 😉")
      }
@@ -171,14 +176,14 @@ for (let j = 0; j < 6; j++) {
         if (guessMovie === favMovies[l]) {
             mark++;
         } else {
-            continue
+            continue;
         }
     }
 }
 
-if (mark < 5) {
+if (mark < 3) {
     alert("aww..sorry but you got only "+ mark + " answers correct..")
-} else if (mark >= 5 && mark <= 9) {
+} else if (mark >= 3 && mark <= 5) {
     alert("thats good !!! you got " + mark + " answers correct, you know me for sure!!")
 } else {
     alert("wow!! you got all answers correct!! you know me 10000%!!!")
@@ -210,7 +215,7 @@ favMoviesF();
 //     }
 // }
 
-// if (mark < 5) {
+// if (mark < 3) {
 //     alert("aww..sorry but you got only "+ mark + " answers correct..")
 // } else if (mark >= 5 && mark <= 9) {
 //     alert("thats good !!! you got " + mark + " answers correct, you know me for sure!!")
