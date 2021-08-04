@@ -25,10 +25,10 @@ alert("next question!");
 var sparetime = prompt("what do you think i do in my spare time?");
 sparetime.toLowerCase();
 if(sparetime === "games"){
-    alert("<br>correct !!! i play video games in my spare time ");
+    alert("correct !!! i play video games in my spare time ");
 }
 else{
-    alert("<br>sorry but  right answer is games...")
+    alert("sorry but  right answer is games...")
 }
 //console.log("correct answer is games");
 
@@ -36,9 +36,9 @@ else{
 var favGame = prompt("can you guess my fav game??");
 favGame.toLowerCase();
 if(favGame === "days gone" || favGame === "dota"){
-    alert("<br>correct !! that is my fav game ");
+    alert("correct !! that is my fav game ");
 } else {
-    alert("<br>sorry , i love days gone and dota the most");
+    alert("sorry , i love days gone and dota the most");
 }
 //console.log("correct answer is dota or days gone");
 
@@ -46,10 +46,10 @@ if(favGame === "days gone" || favGame === "dota"){
 var favSong = prompt("do you know whats my favorite song ?");
 favSong.toLowerCase();
 if(favSong === "valhalla"){
-    alert("<br>yes!!! it is valhalla for sure ");
+    alert("yes!!! it is valhalla for sure ");
 }
 else{
-    alert("<br>sorry but my fav is valhalla...")
+    alert("sorry but my fav is valhalla...")
 }
 
 //console.log("correct answer is valhalla ");
@@ -58,10 +58,10 @@ else{
 var toVisit = prompt("can you guess what country i would love to visit the most?");
 toVisit.toLowerCase();
 if(toVisit === "iceland"){
-    alert("<br>yes!! it is iceland, i love the nature views in it");
+    alert("yes!! it is iceland, i love the nature views in it");
 }
 else{
-    alert("<br>sorry but i would like to visit iceland..")
+    alert("sorry but i would like to visit iceland..")
 }
 
 //console.log("correct answer is iceland");
