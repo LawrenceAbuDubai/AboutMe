@@ -7,57 +7,71 @@ alert("nice to meet you " + userName);
 
 alert("lets play a guessing game. ");
 
-var favFood = prompt("what is you fav food??");
+var favFood = prompt("do you know whats my favorite food?");
 favFood.toLowerCase();
 if(favFood === "pizza"){
-    document.write("ohhh pizza is my fav tooo!!! 🍕");
+    document.write("correct!! its pizza 🍕");
 }
 else{
-    document.write("thats delicious  but i love pizza more🍕...")
+    document.write("sorry but no...my fav is pizza")
 }
+
+//console.log("correct answer is pizza");
+
 
 //console.log("next question!");
 alert("next question!");
 
-var sparetime = prompt("what would you like to do more in your spare time ?");
+var sparetime = prompt("what do you think i do in my spare time?");
 sparetime.toLowerCase();
 if(sparetime === "games"){
-    document.write("<br>niiice , i love playing games too in my sparetime🎮");
+    document.write("<br>correct !!! i play video games in my spare time ");
 }
 else{
-    document.write("<br>that sounds good but i love playing games more🎮...")
+    document.write("<br>sorry but  right answer is games...")
 }
 
+//console.log("correct answer is games");
 
-var favGame = prompt("what is your fav game?");
+
+var favGame = prompt("can you guess my fav game??");
 favGame.toLowerCase();
 if(favGame === "days gone" || favGame === "dota"){
-    document.write("<br>niiice , i love " + favGame + " too , its one of my favorites!!");
+    document.write("<br>correct !! that is my fav game ");
 } else {
-    document.write("<br>seems like a good game for sure but didnt try it yet");
+    document.write("<br>sorry , i love days gone and dota the most");
 }
 
-var favSong = prompt("what song do you like to listen to the most ?");
+//console.log("correct answer is dota or days gone");
+
+
+var favSong = prompt("do you know whats my favorite song ?");
 favSong.toLowerCase();
 if(favSong === "valhalla"){
-    document.write("<br>i love that song tooo ");
+    document.write("<br>yes!!! it is valhalla for sure ");
 }
 else{
-    document.write("<br>did not hear this one before...")
+    document.write("<br>sorry but my fav is valhalla...")
 }
 
-var toVisit = prompt("what country you would like to visit?");
+//console.log("correct answer is valhalla ");
+
+
+var toVisit = prompt("can you guess what country i would love to visit the most?");
 toVisit.toLowerCase();
 if(toVisit === "iceland"){
-    document.write("<br>me too , it looks very amazing");
+    document.write("<br>yes!! it is iceland, i love the nature views in it");
 }
 else{
-    document.write("<br>that is a good choice for sure, for me i would like to visit iceland..")
+    document.write("<br>sorry but i would like to visit iceland..")
 }
+
+//console.log("correct answer is iceland");
 
 
 var guessNum = prompt("pick a number between 1 and 10");
 
+//console.log("correct answer is 3");
 
 
 let i = 0;
@@ -74,6 +88,10 @@ for (i; i < 4; i++) {
 }
 
 let favMovies = ['enemy at the gates', 'hunger games', 'world war Z','gorwn ups','hangover','lord of the rings','zombieland','warrior','hacker','gangs of newyork'];
+
+//console.log("correct answer is enemy at the gates', 'hunger games', 'world war Z','gorwn ups','hangover','lord of the rings','zombieland','warrior','hacker','gangs of newyork");
+
+
 
 for (let j = 0; j < 6; j++) {
     var guessMovie = prompt('i have 10 top movies , can you guess them??');
