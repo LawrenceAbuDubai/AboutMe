@@ -27,6 +27,11 @@ body{
     background-color: rgb(73, 42, 214)
   } 
   
+  ol{
+    list-style-type: decimal;
+    padding: 100 px;
+  }
+  
   
   span{
     background-color: purple;
@@ -35,3 +40,8 @@ body{
   #inside{
     color: white
   }
+  footer ul{
+    list-style-type: decimal;
+    padding: 100 px;
+  }
+  

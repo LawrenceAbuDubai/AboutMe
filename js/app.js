@@ -1,6 +1,8 @@
 'use strict';
 
-var userName = prompt("😀😀hii , welcome to my site, what is your name? ");
+let userName = prompt("😀😀hii , welcome to my site, what is your name? ");
+
+let mark = 0;
 
 //console.log("nice to meet you " + userName);
 alert("nice to meet you " + userName);
@@ -8,13 +10,14 @@ alert("nice to meet you " + userName);
 alert("lets play a guessing game. ");
 
 function favFoodF(){
-var favFood = prompt("do you know whats my favorite food?");
+var favFood = prompt("is my favorite food pizza ? yes/no");
 favFood.toLowerCase();
-if(favFood === "pizza"){
-    alert("correct!! its pizza 🍕");
+if(favFood === "yes"){
+    alert("correct!!");
+    mark++;
 }
 else{
-    alert("sorry but no...my fav is pizza")
+    alert("incorrect , its pizza ")
 }
 }
 favFoodF();
@@ -34,13 +37,14 @@ alert("next question!");
 //console.log("next question!");
 // alert("next question!");
 function sparetimeF(){
-    var sparetime = prompt("what do you think i do in my spare time?");
+    var sparetime = prompt("do you think i play games in my spare time ?? yes/no ");
 sparetime.toLowerCase();
-if(sparetime === "games"){
+if(sparetime === "yes"){
     alert("correct !!! i play video games in my spare time ");
+    mark++;
 }
 else{
-    alert("sorry but  right answer is games...")
+    alert("incorrect i play games in my spare time")
 }}
 sparetimeF();
 
@@ -56,12 +60,13 @@ sparetimeF();
 //console.log("correct answer is games");
 
 function favGameF(){
-    var favGame = prompt("can you guess my fav game??");
+    var favGame = prompt("is my favorite game dota? yes/no ");
 favGame.toLowerCase();
-if(favGame === "days gone" || favGame === "dota"){
+if(favGame === "yes"){
     alert("correct !! that is my fav game ");
+    mark++;
 } else {
-    alert("sorry , i love days gone and dota the most");
+    alert("incorrect , its dota");
 }
 }
 favGameF();
@@ -76,13 +81,14 @@ favGameF();
 //console.log("correct answer is dota or days gone");
 
 function favSongF(){
-    var favSong = prompt("do you know whats my favorite song ?");
+    var favSong = prompt("is my fav song valhalla ? yes/no ");
     favSong.toLowerCase();
-    if(favSong === "valhalla"){
+    if(favSong === "yes"){
         alert("yes!!! it is valhalla for sure ");
+        mark++;
     }
     else{
-        alert("sorry but my fav is valhalla...")
+        alert("incorrect it is valhalla")
     }
 }
 favSongF();
@@ -98,10 +104,11 @@ favSongF();
 //console.log("correct answer is valhalla ");
 
 function toVisitF(){
-    var toVisit = prompt("can you guess what country i would love to visit the most?");
+    var toVisit = prompt("do you think i want to visit iceland? yes/no");
     toVisit.toLowerCase();
-    if(toVisit === "iceland"){
+    if(toVisit === "yes"){
         alert("yes!! it is iceland, i love the nature views in it");
+        mark++;
     }
     else{
         alert("sorry but i would like to visit iceland..")
@@ -131,15 +138,21 @@ function guessNumF(){
 
 let i = 0;
 
-for (i; i < 4; i++) {
-    var guessNum = prompt("pick a number between 1 and 10");
-    if (guessNum == 3) {
-        alert("correct!!! the number is three 3!!");
-        break;
-    } else{
-        alert("sorry but its not the correct answer, a little hint : its of the of the first 3 odd numbers 😉")
+    for (i; i < 4; i++) {
+        let guessNum = Number(prompt("pick a number between 1 and 10"));
+        if (guessNum > 3) {
+            alert('too high');
+        } else if (guessNum < 3) {
+            alert('too low');
+        } else if (guessNum == 3) {
+            alert('correct');
+            mark++;
+            break;
+        }
+        
+        
     }
-}
+    alert("the right answer is 3");
 }
 
 guessNumF();
@@ -156,35 +169,30 @@ function favMoviesF(){
 
 //console.log("correct answer is enemy at the gates', 'hunger games', 'world war Z','gorwn ups','hangover','lord of the rings','zombieland','warrior','hacker','gangs of newyork");
 
-let mark = 0;
 
 for (let j = 0; j < 6; j++) {
-    var guessMovie = prompt('i have 10 top movies , can you guess them??');
+    var guessMovie = prompt('i have 10 top movies , can you guess one of them??');
     for (let l = 0; l < favMovies.length; l++) {
         if (guessMovie === favMovies[l]) {
+            alert("thats correct!!");
             mark++;
-        } else {
-            continue;
-        }
+            j = 7;
+            break;
+        } 
     }
+
 }
 
-if (mark < 3) {
-    alert("aww..sorry but you got only "+ mark + " answers correct..")
-} else if (mark >= 3 && mark <= 5) {
-    alert("thats good !!! you got " + mark + " answers correct, you know me for sure!!")
-} else {
-    alert("wow!! you got all answers correct!! you know me 10000%!!!")
-}
 
 
 // console.log("that is all for this round " + userName + " it was fun so hope we can continue next time 😁");
-alert("that is all for this round " + userName + " it was fun so hope we can continue next time 😁");
 
 
 }
 
 favMoviesF();
+
+alert(`your mark is ${mark} out of 7`);
 
 // let favMovies = ['enemy at the gates', 'hunger games', 'world war Z','gorwn ups','hangover','lord of the rings','zombieland','warrior','hacker','gangs of newyork'];
 
