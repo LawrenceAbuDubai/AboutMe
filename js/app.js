@@ -130,7 +130,6 @@ function guessNumF(){
 
 
 let i = 0;
-let mark = 0;
 
 for (i; i < 4; i++) {
     var guessNum = prompt("pick a number between 1 and 10");
@@ -150,25 +149,14 @@ guessNumF();
 // //console.log("correct answer is 3");
 
 
- let i = 0;
- let mark = 0;
-
- for (i; i < 4; i++) {
-     var guessNum = prompt("pick a number between 1 and 10");
-     if (guessNum == 3) {
-         alert("correct!!! the number is three 3!!");
-         break;
-     } else{
-         alert("sorry but its not the correct answer, a little hint : its of the of the first 3 odd numbers 😉")
-     }
- }
+ 
 
 function favMoviesF(){
     let favMovies = ['enemy at the gates', 'hunger games', 'world war Z','gorwn ups','hangover','lord of the rings','zombieland','warrior','hacker','gangs of newyork'];
 
 //console.log("correct answer is enemy at the gates', 'hunger games', 'world war Z','gorwn ups','hangover','lord of the rings','zombieland','warrior','hacker','gangs of newyork");
 
-
+let mark = 0;
 
 for (let j = 0; j < 6; j++) {
     var guessMovie = prompt('i have 10 top movies , can you guess them??');
