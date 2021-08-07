@@ -1,47 +1,26 @@
 
 
-body{
-    background-color: lightgray;
-  }
+body {
+  background-image: url("https://images.unsplash.com/32/Mc8kW4x9Q3aRR3RkP5Im_IMG_4417.jpg?ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8YmFja2dyb3VuZHxlbnwwfHwwfHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60");
+  background-color: lightblue;
+  color: black;
+  font-size: 25px;
+
+}
+
+ol {
+  background-color: coral;
+  opacity: 0.3;
+  color: black;
+  font-size: 25px;
+
+}
   
-  
-  
-  
-  
-  
-  footer{
-     background-color: rgb(177, 167, 169)
-  }
-  
-  
-  
-  #red{
-    background-color: red
-  }
-  .orange{
-    background-color: rgb(255, 255, 255);
-  }
-  
-  
-  p{
-    background-color: rgb(73, 42, 214)
-  } 
-  
-  ol{
-    list-style-type: decimal;
-    padding: 100 px;
-  }
-  
-  
-  span{
-    background-color: purple;
-  }
-  
-  #inside{
-    color: white
-  }
-  footer ul{
-    list-style-type: decimal;
-    padding: 100 px;
-  }
-  
+footer {
+  background-color: coral;
+  opacity: 0.3;
+  color: b;
+  font-size: 25px;
+
+}
+
